@@ -15,12 +15,14 @@
 #         NOTES:  ---
 #        AUTHOR:  Dennis van Zuijlekom, dvanzuijlekom@hack42.nl
 #       COMPANY:  Hackerspace Hack42 Arnhem
-#       VERSION:  1.0
+#       VERSION:  1.1
 #       CREATED:  2014-04-15
 #      REVISION:  ---
 ##############################################################################
 #       CHANGES:  2014-04-15, DVZ, 1.0
 #                 Initial release.
+#                 2014-04-22, DVZ, 1.1
+#                 Added a few accusations and nouns
 ##############################################################################
 
 import random
@@ -55,6 +57,7 @@ accusation.append("poging tot doodslag op")
 accusation.append("valsmunterij met behulp van")
 accusation.append("poging tot omkoperij van")
 accusation.append("witwaspraktijken met")
+accusation.append("het plegen van genocide op")
 
 noun = []
 noun.append("handgereedschappen")
@@ -82,6 +85,16 @@ noun.append("toiletbrillen")
 noun.append("onzinnige aangiftes")
 noun.append("IRC bots")
 noun.append("seksueel overdraagbare aandoeningen")
+noun.append("geometrische vormen")
+noun.append("priemgetallen")
+noun.append("instant noodles")
+noun.append("relativiteit")
+noun.append("SCART stekkers")
+noun.append("non-maskable interrupts")
+noun.append("POSIX standaarden")
+noun.append("ITIL procedures")
+noun.append("  R O Z E    F * * * * * G    P O N I E S")
+noun.append("museumstukken")
 
 random_accusation = random.choice(accusation)
 random_noun = random.choice(noun)
