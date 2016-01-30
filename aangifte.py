@@ -16,9 +16,9 @@
 #         NOTES: ---
 #        AUTHOR: Dennis van Zuijlekom, <dvanzuijlekom@hack42.nl>
 #       COMPANY: Hackerspace Hack42 Arnhem
-#       VERSION: 1.3
+#       VERSION: 1.4
 #       CREATED: 2014-04-15
-#      MODIFIED: Tue 06 May 2014 22:13:42 CEST
+#      MODIFIED: Sat 30 Jan 2016 21:36:02 CET
 #      REVISION: ---
 ##############################################################################
 #       CHANGES: 2014-04-15, DVZ, 1.0
@@ -29,6 +29,8 @@
 #                Some more accusations and nouns, sorted lists
 #                2014-05-06, DVZ, 1.3
 #                Moar!
+#                2016-01-30, DVZ, 1.4
+#                Rework after taking a Python Programming class
 ##############################################################################
 """
 
@@ -132,8 +134,5 @@ noun.append("zeeglas")
 noun.append("zwaartekracht")
 noun.append("zwarte gaten")
 
-random_accusation = random.choice(accusation)
-random_noun = random.choice(noun)
-
-print 'Bij dezen wil ik aangifte tegen Hack42 doen wegens {} {}.'.format(random_accusation, random_noun)
+print("Bij dezen wil ik aangifte doen wegens %s %s" % (random.choice(accusation), random.choice(noun)))
 
